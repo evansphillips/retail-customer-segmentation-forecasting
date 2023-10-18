@@ -45,14 +45,16 @@ This comprehensive table captures records for all created orders, boasting 1,067
 | Country         | object   | Country name where the customer resides.                  |
 
 ## File Tree
+```
 .
 ├── data
 │ ├── 2009-2010.csv
 │ └── 2010-2011.csv
 ├── models
-│ └── top2vec_model.pkl
+│ └── t2v
 ├── notebooks
 │ ├── ds4a_retail_challenge.ipynb
 │ ├── gensim_lda.py
 │ └── utils.py
 └── README.md
+```
