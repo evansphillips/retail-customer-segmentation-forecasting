@@ -48,13 +48,14 @@ This comprehensive table captures records for all created orders, boasting 1,067
 ```
 .
 ├── data
-│ ├── 2009-2010.csv
-│ └── 2010-2011.csv
+│   ├── 2009-2010.csv
+│   └── 2010-2011.csv
 ├── models
-│ └── t2v
+│   └── t2v
 ├── notebooks
-│ ├── ds4a_retail_challenge.ipynb
-│ ├── gensim_lda.py
-│ └── utils.py
-└── README.md
+│   ├── ds4a_retail_challenge.ipynb
+│   ├── gensim_lda.py
+│   └── utils.py
+├── README.md
+└── requirements.txt
 ```
