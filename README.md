@@ -58,4 +58,11 @@ This comprehensive table captures records for all created orders, boasting 1,067
 │   └── utils.py
 ├── README.md
 └── requirements.txt
-```
+```  
+
+## References 
+
+1. <https://www.machinelearningplus.com/nlp/topic-modeling-gensim-python/>
+1. <https://github.com/nicodv/kmodes>
+1. <https://towardsdatascience.com/understanding-topic-coherence-measures-4aa41339634c>
+1. <https://medium.com/@thomas.shawcarveth/market-segmentation-and-predicting-marketing-success-with-data-science-f48c99e3b4e1> 
