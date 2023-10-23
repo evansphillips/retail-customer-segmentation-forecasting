@@ -66,3 +66,5 @@ This comprehensive table captures records for all created orders, boasting 1,067
 1. <https://github.com/nicodv/kmodes>
 1. <https://towardsdatascience.com/understanding-topic-coherence-measures-4aa41339634c>
 1. <https://medium.com/@thomas.shawcarveth/market-segmentation-and-predicting-marketing-success-with-data-science-f48c99e3b4e1> 
+1. <https://www.geeksforgeeks.org/rfm-analysis-analysis-using-python/>
+1. <https://www.machinelearningplus.com/time-series/arima-model-time-series-forecasting-python/>

@@ -1,4 +1,4 @@
-from typing import List, Type, Tuple
+from typing import List, Type, Tuple, Union
 from gensim.utils import simple_preprocess
 from gensim.models.phrases import Phraser, Phrases
 from gensim.models import CoherenceModel
