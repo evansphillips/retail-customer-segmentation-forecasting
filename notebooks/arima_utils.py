@@ -64,8 +64,8 @@ def plot_monthly_revenue(retail_data: pd.DataFrame):
         )
 
     plt.xlabel("Month")
-    plt.ylabel("Average Monthly Revenue (£)")
-    plt.title("Month vs. Average Monthly Revenue")
+    plt.ylabel("Average Revenue (£)")
+    plt.title("Average Monthly Revenue")
     plt.xticks(rotation=45)  # Rotate x-axis tick labels for better visibility
     plt.legend()
     plt.show()
@@ -113,6 +113,13 @@ def plot_cluster_revenues(dataframes: List[pd.DataFrame], title: str):
     fig, axes = plt.subplots(2, 2, figsize=(12, 8))
     fig.suptitle(title.title(), fontsize=16)
 
+    cluster_titles = [
+        "Budget-Conscious Home Decor Shoppers",
+        "Garden and Decor Enthusiasts",
+        "Frequent Shopper/Top Customers",
+        "High-End Shoppers with Moderate Value"
+    ]
+
     for i, df in enumerate(dataframes):
         # Set df index to 'invoice_date' if it isn't already
         if df.index.name != 'invoice_date':
@@ -122,15 +129,16 @@ def plot_cluster_revenues(dataframes: List[pd.DataFrame], title: str):
 
         # Plot weekly revenue data
         ax.plot(df.index, df['revenue'], label='Weekly Revenue')
-        ax.set_title(f'Revenue for Cluster {i}')
+        ax.set_title(f'Revenue for {cluster_titles[i]}')  # Set the title based on the cluster_titles list
         ax.set_xlabel('Date')
-        ax.set_ylabel('Revenue')
+        ax.set_ylabel('Revenue (£)')
 
         # Tilt the x-axis ticks for better readability
         ax.tick_params(axis='x', rotation=45)
 
     plt.tight_layout()
     plt.show()
+
 
 
 def create_weekly_splits(train_df: pd.DataFrame, test_df: pd.DataFrame) -> Tuple[pd.DataFrame, pd.DataFrame]:
@@ -293,5 +301,6 @@ def plot_manual_auto_forecasts(cluster2_weekly_test, cluster2_weekly_train, clus
 
     plt.title(title)
     plt.xlabel("Invoice Date")
+    plt.ylabel('Revenue (£)')
     plt.legend()
     plt.show()
